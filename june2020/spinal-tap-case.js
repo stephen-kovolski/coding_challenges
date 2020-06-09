@@ -29,9 +29,11 @@ function firstQuestion(str){
 
     rl.question('What would you like me to hyphanat and put in lower case?\nString:', (str) => {
 
+        //str.replace(/ /g, '-').toLowerCase();
+        
         console.log(str)
 
-        let newString = str.split(' ').join('-').toLowerCase();
+         let newString = str.split(' ').join('-').toLowerCase();
 
     console.log(`\nOriginal: ${str}\nNew String: ${newString}`);
 
